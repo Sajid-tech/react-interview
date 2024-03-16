@@ -1,7 +1,13 @@
 import React from "react";
 import withCounter from "./withCounter";
 
-const HoverCounter = ({ incrementCounter, counter, hello }) => {
+const HoverCounter = ({
+  incrementCounter,
+  counter,
+  hello,
+  decrementCounter,
+  disabledCounter,
+}) => {
   //   const { incrementCounter, counter, hello } = props;
   return (
     <>
@@ -9,7 +15,10 @@ const HoverCounter = ({ incrementCounter, counter, hello }) => {
         <p>Hover to increase the count {hello}</p>
         <div>
           <p>Count : {counter}</p>
-          <button onMouseEnter={incrementCounter}>Hover</button>
+          <button onMouseOver={incrementCounter}>Hover to inc</button>
+          <button onMouseEnter={decrementCounter} disabled={disabledCounter}>
+            Hover to dec
+          </button>
         </div>
       </div>
     </>

@@ -8,6 +8,8 @@ const withCounter = (WrappedComponent) => {
         hello="world"
         counter={counter}
         incrementCounter={() => setCounter(counter + 1)}
+        decrementCounter={() => setCounter(counter - 1)}
+        disabledCounter={counter <= 0}
       />
     );
   };
