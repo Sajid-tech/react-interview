@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import Footer from './components/Footer';
+import ProductList from './components/ProductList';
 
 function App() {
   return <>
@@ -18,7 +19,10 @@ function App() {
         {/* hoc  */}
         {/* <ClickCounter /> */}
         {/* <HoverCounter /> */}
-        <Footer />
+        {/* react lifecycele  */}
+        {/* <Footer /> */}
+        {/* custom hooks  */}
+        <ProductList />
       </div>
     </div>
   </>
